@@ -1,0 +1,95 @@
+/*Universal*/
+html{
+  font-size:16px;
+}
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+/*header*/
+.box {
+  width: 100%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  height: 64px;
+  font-size: 2rem;
+  color: grey;
+}
+header strong{
+  color: black;
+}
+nav{
+  display: flex;
+  border: 1px solid black;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 3rem;
+  margin-left: 24px;
+}
+nav{
+  display: inline-block;
+  margin-right: 8px;
+  color: black;
+}
+nav a{
+  color: inherit;
+  text-decoration: inherit;
+  padding: 0 16px 0 16px;
+  border: 1px solid black;
+}
+
+/*Banner*/
+.banner{
+  width: 100%;
+  border: 1px solid black;
+  background-color: hsl(200, 19%, 87%);
+  display: flex;
+}
+.bannerimage img{
+  padding: 2rem 1.5rem;
+  width: 60%；
+}
+.banner .description{
+  display: flex;
+  max-width: 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:hsla(0, 24%, 33%,0.9);
+
+}
+.banner span{
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.banner p{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.button{
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom:0.5rem;
+  background-color:hsla(0, 24%, 33%,0.9);
+  color: white;
+  text-decoration: inherit;
+}
+/*Information*/
+.information{
+  display: flex;
+}
