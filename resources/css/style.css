@@ -52,6 +52,28 @@ nav a{
   padding: 0 16px 0 16px;
   border: 1px solid black;
 }
+.mobile{
+  display:none;
+}
+/*Header 480px*/
+@media only screen and (max-width: 700px) {
+.container{
+  width: 100%:
+}
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+  header span{
+    display:none;
+  }
+  header nav{
+    display: none;
+  }
+  .mobile{
+    display:block;
+  }
+}
 
 /*Banner*/
 .banner{
@@ -66,12 +88,11 @@ nav a{
 }
 .banner .description{
   display: flex;
-  max-width: 25%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color:hsla(0, 24%, 33%,0.9);
-
+  max-width: 25%;
 }
 .banner span{
   font-size: 3.5rem;
@@ -91,6 +112,34 @@ nav a{
   color: white;
   text-decoration: inherit;
   border-radius: 2%;
+
+}
+/*Banner 480px*/
+@media only screen and (max-width: 700px){
+  .container{
+    width: 100%;
+  }
+  .banner img{
+    max-width: 100%;
+  }
+  .bannerimage{
+    padding: 0;
+    margin: 0 auto;
+  }
+  .banner .description{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+   }
+
+
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+  .bannerimage{
+
+  }
 }
 /*Information*/
 .information{
@@ -160,7 +209,34 @@ nav a{
   text-decoration: inherit;
   margin: 0 0;
 }
+.mobileinfo{
+  display: none;
+}
+/*Information mobile*/
+@media only screen and (max-width: 700px){
+  .container{
+    width: 100%;
+  }
+  .bigbox{
+    display:none;
+  }
+  .smallbox, .info.description, .small img{
+    width: 100%;
+  }
+  .smallbox{
+    padding: 0 0;
+  }
 
+  .small{
+    flex-direction: column;
+  }
+  .webpageinfo{
+    display: none;
+  }
+  .mobileinfo{
+    display: block;
+  }
+}
 /*Course Data*/
 .container.data{
   background-color: hsl(200, 19%, 87%);
