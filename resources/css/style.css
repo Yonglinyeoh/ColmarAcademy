@@ -78,21 +78,27 @@ nav a{
 /*Banner*/
 .banner{
   width: 100%;
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: hsl(200, 19%, 87%);
   display: flex;
 }
 .bannerimage{
+  width: 60%;
+}
+.banner img{
   padding: 2rem 1.5rem;
-  width: 60%；
+  width: auto;
+}
+.banner2{
+  display: flex;
+  width: auto;
 }
 .banner .description{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
   color:hsla(0, 24%, 33%,0.9);
-  width: 25%;
+  width: 70%;
 }
 .banner span{
   font-size: 3.5rem;
@@ -123,19 +129,38 @@ nav a{
     display: flex;
     flex-direction: column;
   }
-  .banner img{
+  .bannerimage{
     width: 100%;
   }
-  .bannerimage{
+  .banner img{
+    width: 100%;
     padding: 0;
-    margin: 0 auto;
   }
   .banner .description{
     width: auto;
     padding: 2rem 1rem;
    }
-
-
+}
+/*Banner window*/
+@media only screen and (max-width:1500px) and (min-width:700px){
+  .container{
+    width: 100%;
+  }
+  .bannerimage{
+    display: none;
+  }
+  .banner2{
+    width: 100%;
+  }
+  .banner .description{
+    color: white;
+    display: flex;
+    width: 100%;
+    background-image: url("https://d15q5g7ipjper4.cloudfront.net/blog/wp-content/uploads/2016/12/omeahbefln4-alexis-brown1-1355x1020.jpg");
+  }
+  .banner img{
+  width: 100%;
+  }
 }
 /*Information*/
 .information{
@@ -150,6 +175,7 @@ nav a{
   padding: 2rem 1.5rem;
 }
 .bigbox img{
+  width: auto;
   padding-bottom: 2rem;
 }
 .bigbox span{
@@ -243,7 +269,27 @@ nav a{
   .info.description a{
     padding-bottom: 3rem;
   }
-
+}
+/*Information window*/
+@media only screen and (max-width:1500px) and (min-width:700px){
+  .webpageinfo{
+    display:none;
+  }
+  .bigbox img{
+    width: 100%;
+  }
+  .bigbox{
+    width: 60%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .smallbox{
+    width: 40%;
+  }
+  .info.description{
+    width: 100%;
+    margin: 3rem 0;
+  }
 }
 /*Course Data*/
 .container.data{
@@ -331,6 +377,16 @@ nav a{
     margin: 1rem 1rem 0.5rem 1rem;
   }
 }
+/*Course window*/
+@media only screen and (max-width:1500px) and (min-width:700px){
+  .lane{
+    flex-direction: column;
+  }
+.learn{
+  width: 35%;
+  margin: 0 auto;
+}
+}
 /*Thesis*/
 .thesis{
   font-size: 3rem;
@@ -361,6 +417,7 @@ video{
   max-width: 100%;
   padding: 2rem 1.5rem;
 }
+
 /*Thesis mobile*/
 @media only screen and (max-width: 700px){
 .smallbox, .thesisvid span, .thesisvid p{
@@ -373,6 +430,20 @@ video{
   width: auto;
   padding: 1rem 0 1.5rem 0;
 }
+}
+/*Thesis window*/
+@media only screen and (max-width:1500px) and (min-width:700px){
+.small img,.thesisvid span, .thesisvid p{
+    display: none;
+  }
+  .thesisvid{
+    width: 100%;
+  }
+  video{
+    width: auto;
+    padding: 1rem 0 1.5rem 0;
+  }
+  }
 }
 /*footer*/
 footer{
@@ -389,6 +460,7 @@ footer{
 .terms span{
   padding: 1rem;
 }
+
 /*footer mobile*/
 @media only screen and (max-width: 700px){
   .terms{
@@ -398,4 +470,13 @@ footer{
   height: auto;
   padding: 1rem 1rem;
 }
+}
+/*footer webpage*/
+@media only screen and (max-width:1500px) and (min-width:700px){
+  footer{
+    display: flex;
+    height: auto;
+    padding: 2rem 2rem;
+  }
+
 }
