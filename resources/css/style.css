@@ -10,7 +10,7 @@ body {
 .container{
   max-width: 1920px;
   margin: 0 auto;
-  border: 1px solid black;
+
 }
 /*header*/
 .box {
@@ -20,7 +20,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+
   height: 64px;
   font-size: 2rem;
   color: grey;
@@ -30,7 +30,7 @@ header strong{
 }
 nav{
   display: flex;
-  border: 1px solid black;
+
   font-size: 1.5rem;
 }
 .logo{
@@ -50,7 +50,7 @@ nav a{
   color: inherit;
   text-decoration: inherit;
   padding: 0 16px 0 16px;
-  border: 1px solid black;
+
 }
 .mobile{
   display:none;
@@ -78,7 +78,7 @@ nav a{
 /*Banner*/
 .banner{
   width: 100%;
-  border: 2px solid black;
+
   background-color: hsl(200, 19%, 87%);
   display: flex;
 }
@@ -167,7 +167,7 @@ nav a{
   display: flex;
 }
 .bigbox{
-  border: 1px solid black;
+
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -197,7 +197,7 @@ nav a{
 }
 .small{
   display: flex;
-  border: 1px solid #C6B6E6;
+  border-bottom: 1px solid #C6B6E6;
   width: 100%;
 }
 .small img{
@@ -210,22 +210,21 @@ nav a{
   flex-direction: column;
   justify-content: center;
   color:hsla(0, 24%, 33%,0.9);
-  border: 1px solid black;
   width: 65%;
 }
 .smalltitle{
   font-size: 2rem;
   font-weight: 700;
-  border: 1px solid black;
+
 }
 
 .small p{
   font-size: 1.5rem;
-  border: 1px solid black;
+
   margin:0.5rem 0;
 }
 .small a{
-  border: 1px solid black;
+
   font-size: 1.5rem;
   color: #6161EF;
   text-decoration: inherit;
@@ -312,14 +311,14 @@ nav a{
 }
 .lane{
   display: flex;
-  border: 1px solid black;
+
 }
 
 .learn{
   display: flex;
   width: 100%;
   flex-direction: column;
-  border: 1px solid black;
+
   margin: 2rem 1rem;
   background-color: white;
 }
@@ -334,7 +333,7 @@ nav a{
   height: auto;
 }
 .details{
-  border: 4px solid black;
+
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 1.5rem;
@@ -383,7 +382,7 @@ nav a{
     flex-direction: column;
   }
 .learn{
-  width: 35%;
+  max-width: 500px;
   margin: 0 auto;
 }
 }
@@ -393,7 +392,7 @@ nav a{
   text-align: center;
   font-weight: 800;
   color: hsla(0, 24%, 33%,0.9);
-  border: 1px solid black;
+
   margin: 2rem 0 0 0;
 }
 .thesisbox{
@@ -403,7 +402,7 @@ nav a{
   display: flex;
   flex-direction: column;
   width: 60%;
-  border: 1px solid black;
+
   color:  hsla(0, 24%, 33%,0.9);
 }
 .thesisvid p{
