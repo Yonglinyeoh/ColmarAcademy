@@ -1,6 +1,7 @@
 /*Universal*/
 html{
   font-size:16px;
+  line-height: 1.4;
 }
 body {
   font-family: Raleway, sans-serif;
@@ -58,7 +59,7 @@ nav a{
   background-color: hsl(200, 19%, 87%);
   display: flex;
 }
-.bannerimage img{
+.bannerimage{
   padding: 2rem 1.5rem;
   width: 60%；
 }
@@ -88,8 +89,102 @@ nav a{
   background-color:hsla(0, 24%, 33%,0.9);
   color: white;
   text-decoration: inherit;
+  border-radius: 2%;
 }
 /*Information*/
 .information{
   display: flex;
+}
+.bigbox{
+  border: 1px solid black;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color:hsla(0, 24%, 33%,0.9);
+  padding: 2rem 1.5rem;
+}
+.bigbox img{
+  padding-bottom: 2rem;
+}
+.bigbox span{
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
+.bigbox .description{
+  font-size: 1.5rem;
+}
+.bigbox p {
+  font-size: 1.2rem;
+}
+.smallbox{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 2rem 1.5rem;
+}
+.small{
+  display: flex;
+  border: 1px solid #C6B6E6;
+  width: 100%;
+}
+.small img{
+  width: 35%;
+  height: auto;
+  padding: 1rem 1rem;
+}
+.info.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:hsla(0, 24%, 33%,0.9);
+  border: 1px solid black;
+  width: 65%;
+}
+.smalltitle{
+  font-size: 2rem;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+.small p{
+  font-size: 1.5rem;
+  border: 1px solid black;
+  margin:0.5rem 0;
+}
+.small a{
+  border: 1px solid black;
+  font-size: 1.5rem;
+  color: #6161EF;
+  text-decoration: inherit;
+  margin: 0 0;
+}
+
+/*Course Data*/
+.start{
+  font-size: 3rem;
+  text-align: center;
+}
+.courses{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right:4rem;
+}
+.lane{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+.learn{
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.learn img{
+  height: auto;
 }
