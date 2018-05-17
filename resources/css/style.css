@@ -92,7 +92,7 @@ nav a{
   justify-content: center;
   align-items: center;
   color:hsla(0, 24%, 33%,0.9);
-  max-width: 25%;
+  width: 25%;
 }
 .banner span{
   font-size: 3.5rem;
@@ -115,31 +115,27 @@ nav a{
 
 }
 /*Banner 480px*/
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 700px){
   .container{
     width: 100%;
   }
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
   .banner img{
-    max-width: 100%;
+    width: 100%;
   }
   .bannerimage{
     padding: 0;
     margin: 0 auto;
   }
   .banner .description{
-    max-width: 100%;
-    margin: 0 auto;
+    width: auto;
     padding: 2rem 1rem;
    }
 
 
-  .banner{
-    display: flex;
-    flex-direction: column;
-  }
-  .bannerimage{
-
-  }
 }
 /*Information*/
 .information{
@@ -213,14 +209,14 @@ nav a{
   display: none;
 }
 /*Information mobile*/
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 700px){
   .container{
     width: 100%;
   }
   .bigbox{
     display:none;
   }
-  .smallbox, .info.description, .small img{
+  .smallbox{
     width: 100%;
   }
   .smallbox{
@@ -230,12 +226,24 @@ nav a{
   .small{
     flex-direction: column;
   }
+  .small img{
+    width: auto;
+  }
   .webpageinfo{
     display: none;
   }
   .mobileinfo{
     display: block;
+    width: 100%;
   }
+  .info.description{
+    padding-left: 1rem;
+    width: auto;
+  }
+  .info.description a{
+    padding-bottom: 3rem;
+  }
+
 }
 /*Course Data*/
 .container.data{
@@ -288,6 +296,41 @@ nav a{
 .details p{
   margin: 8px auto;
 }
+.mobiledata{
+  display: none;
+}
+/*Course data mobile*/
+@media only screen and (max-width: 700px){
+  .container {
+    width: 100%;
+  }
+  .start{
+    margin-top: 1rem;
+  }
+.container.data{
+  background-color: white;
+}
+.courses{
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+  .lane{
+    display: flex;
+    flex-direction: column;
+  }
+  .learn{
+    display: none;
+  }
+  .mobiledata{
+    display: block;
+    background-color: hsl(200, 19%, 87%);
+    padding: 1rem 0 1.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+}
 /*Thesis*/
 .thesis{
   font-size: 3rem;
@@ -318,6 +361,19 @@ video{
   max-width: 100%;
   padding: 2rem 1.5rem;
 }
+/*Thesis mobile*/
+@media only screen and (max-width: 700px){
+.smallbox, .thesisvid span, .thesisvid p{
+  display: none;
+}
+.thesisvid{
+  width: 100%;
+}
+video{
+  width: auto;
+  padding: 1rem 0 1.5rem 0;
+}
+}
 /*footer*/
 footer{
   display: flex;
@@ -332,4 +388,14 @@ footer{
 }
 .terms span{
   padding: 1rem;
+}
+/*footer mobile*/
+@media only screen and (max-width: 700px){
+  .terms{
+    display: none;
+  }
+footer{
+  height: auto;
+  padding: 1rem 1rem;
+}
 }
