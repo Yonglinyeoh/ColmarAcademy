@@ -31,6 +31,7 @@ header strong{
 nav{
   display: flex;
   border: 1px solid black;
+  font-size: 1.5rem;
 }
 .logo{
   display: flex;
@@ -228,9 +229,31 @@ nav a{
   flex-direction: column;
   width: 60%;
   border: 1px solid black;
+  color:  hsla(0, 24%, 33%,0.9);
+}
+.thesisvid p{
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+}
+.thesisvid .smalltitle{
+  padding-left: 1.5rem;
 }
 video{
   max-width: 100%;
   padding: 2rem 1.5rem;
-
+}
+/*footer*/
+footer{
+  display: flex;
+  height: 5rem;
+  font-size: 1.2rem;
+  color:  hsla(0, 24%, 33%,0.9);
+  padding-top: 1rem;
+}
+.copyright{
+  flex-grow:1;
+  padding-left: 1.5rem;
+}
+.terms span{
+  padding: 1rem;
 }
